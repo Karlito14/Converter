@@ -12,6 +12,7 @@ export const inputStyles = StyleSheet.create({
     height: 50,
     backgroundColor: 'white',
     borderRadius: 20,
+    fontSize: 20
   },
   unit: {
     position: 'absolute',
