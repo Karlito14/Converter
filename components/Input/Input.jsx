@@ -6,10 +6,9 @@ export const Input = ({ defaultValue, updateValue, unit }) => {
     <View style={inputStyles.container}>
       <TextInput
         style={inputStyles.input}
-        defaultValue={defaultValue}
         keyboardType="numeric"
         onChangeText={updateValue}
-        placeholder="Tape une température"
+        placeholder={defaultValue}
         maxLength={4}
       />
       <Text style={inputStyles.unit}>{unit}</Text>
