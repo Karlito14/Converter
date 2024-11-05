@@ -10,16 +10,16 @@ const converter = (value, unit) => {
     case UNITS.faranheit:
       result = (value - 32) / 1.8;
       break;
-      case UNITS.kilo:
-      result = value * 2.20;
+    case UNITS.kilo:
+      result = value * 2.2;
       break;
-      case UNITS.livre:
-      result = value / 2.20;
+    case UNITS.livre:
+      result = value / 2.2;
       break;
-      case UNITS.kilometre:
+    case UNITS.kilometre:
       result = value / 0.62;
       break;
-      case UNITS.miles:
+    case UNITS.miles:
       result = value * 1.61;
       break;
   }
