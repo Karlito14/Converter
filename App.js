@@ -17,8 +17,9 @@ import { DEFAULT_VALUE, UNITS } from './constants';
 import { converter, getOpposit } from './services/converter';
 
 import { Input } from './components/Input/Input';
-import { TemperatureDisplay } from './components/TemperatureDisplay/TemperatureDisplay';
+import { TemperatureDisplay } from './components/ResultDisplay/ResultDisplay';
 import { ButtonChange } from './components/ButtonChange/ButtonChange';
+import { ListMeasure } from './components/ListMeasure/ListMeasure';
 
 export default function App() {
   const [inputValue, setInputValue] = useState(DEFAULT_VALUE);
@@ -42,9 +43,26 @@ export default function App() {
     setCurrentUnit(getOpposit(currentUnit));
   };
 
+  const switchValue = (value) => {
+    if (value === 'temp') {
+      setCurrentUnit(UNITS.celcius);
+    }
+
+    if (value === 'distance') {
+      setCurrentUnit(UNITS.kilometre);
+    }
+
+    if (value === 'weight') {
+      setCurrentUnit(UNITS.kilo);
+    }
+  };
+
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <ImageBackground source={imageBackground()} style={styles.container}>
+        <View style={styles.contentList}>
+          <ListMeasure onClick={switchValue} />
+        </View>
         <View style={styles.content}>
           <TemperatureDisplay
             temperature={converter(inputValue, currentUnit)}

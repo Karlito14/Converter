@@ -1,5 +1,5 @@
 import { Text } from "react-native";
-import { temperatureStyles } from "./TemperatureDisplay.style";
+import { temperatureStyles } from "./ResultDisplay.style";
 
 export const TemperatureDisplay = ({temperature, unit}) => {
     return(
