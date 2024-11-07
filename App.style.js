@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     justifyContent:'center'
   },
   contentList: {
-    alignItems: 'flex-end'
+    alignItems: 'center'
   },
   content: {
     justifyContent: 'space-evenly',

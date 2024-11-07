@@ -14,6 +14,7 @@ const Item = ({ item, onClick }) => (
 export const ListMeasure = ({ onClick }) => {
   return (
     <FlatList
+      horizontal={true}
       data={DATA}
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => <Item item={item} onClick={onClick} />}

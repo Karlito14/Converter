@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const ListMeasureStyles = StyleSheet.create({
   item: {
     backgroundColor: 'black',
-    margin: 8,
+    marginHorizontal: 8,
     alignItems: 'center',
     borderRadius: 25,
   },
