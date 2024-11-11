@@ -9,6 +9,6 @@ export const ListMeasureStyles = StyleSheet.create({
   },
   title: {
     color: 'white',
-    padding: 10
+    padding: 10,
   },
 });

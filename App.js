@@ -44,16 +44,18 @@ export default function App() {
   };
 
   const switchValue = (value) => {
-    if (value === 'temp') {
-      setCurrentUnit(UNITS.celcius);
-    }
-
-    if (value === 'distance') {
-      setCurrentUnit(UNITS.kilometre);
-    }
-
-    if (value === 'weight') {
-      setCurrentUnit(UNITS.kilo);
+    switch (value) {
+      case 'temp':
+        setCurrentUnit(UNITS.celcius);
+        break;
+      case 'distance':
+        setCurrentUnit(UNITS.kilometre);
+        break;
+      case 'weight':
+        setCurrentUnit(UNITS.kilo);
+        break;
+      default:
+        setCurrentUnit(UNITS.celcius);
     }
   };
 

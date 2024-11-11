@@ -28,28 +28,19 @@ const converter = (value, unit) => {
 };
 
 const getOpposit = (unit) => {
-  if (unit === UNITS.celcius) {
-    return UNITS.faranheit;
-  }
-
-  if (unit === UNITS.faranheit) {
-    return UNITS.celcius;
-  }
-
-  if (unit === UNITS.kilometre) {
-    return UNITS.miles;
-  }
-
-  if (unit === UNITS.miles) {
-    return UNITS.kilometre;
-  }
-
-  if (unit === UNITS.kilo) {
-    return UNITS.livre;
-  }
-
-  if (unit === UNITS.livre) {
-    return UNITS.kilo;
+  switch (unit) {
+    case unit === UNITS.celcius:
+      return UNITS.faranheit;
+    case unit === UNITS.faranheit:
+      return UNITS.celcius;
+    case unit === UNITS.kilometre:
+      return UNITS.miles;
+    case unit === UNITS.miles:
+      return UNITS.kilometre;
+    case unit === UNITS.kilo:
+      return UNITS.livre;
+    case unit === UNITS.livre:
+      return UNITS.kilo;
   }
 };
 

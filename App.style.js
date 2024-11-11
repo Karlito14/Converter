@@ -4,13 +4,13 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    justifyContent:'center'
+    justifyContent: 'center',
   },
   contentList: {
-    alignItems: 'center'
+    alignItems: 'center',
   },
   content: {
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-around',
     alignItems: 'center',
     height: 450,
   },
