@@ -39,8 +39,8 @@ export default function App() {
     }
   };
 
-  const switchUnit = () => {
-    setCurrentUnit(getOpposit(currentUnit));
+  const switchUnit = (unit) => {
+    setCurrentUnit(getOpposit(unit));
   };
 
   const switchValue = (value) => {

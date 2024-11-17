@@ -1,6 +1,6 @@
 import { ListMeasureStyles } from './ListMeasure.style';
 import { DATA } from '../../constants';
-import { FlatList, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, Text, TouchableOpacity } from 'react-native';
 
 const Item = ({ item, onClick }) => (
   <TouchableOpacity
