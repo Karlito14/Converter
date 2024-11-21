@@ -28,7 +28,6 @@ const converter = (value, unit) => {
 };
 
 const getOpposit = (unit) => {
-  console.log(unit);
   switch (unit) {
     case UNITS.celcius:
       return UNITS.faranheit;
